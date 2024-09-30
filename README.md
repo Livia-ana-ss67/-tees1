@@ -1,127 +1,72 @@
-<h1 align="center">Welcome to <%= projectName %> 👋</h1>
+<h1 align="center" >  ATIVIDADE 1 - UNIVERSIDADE FEDERAL RURAL DA AMAZÔNIA
+CAMPUS PARAGOMINAS / SISTEMAS DE INFORMAÇÃO 2024.1
+
+TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE – Prof. Fabrício Almeida Araújo 👨‍💻 </h1>
 <p>
-<% if (isProjectOnNpm) { -%>
-  <a href="https://www.npmjs.com/package/<%= projectName %>" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/<%= projectName %>.svg">
+
+
+
+<h1 align="center">Welcome to TEES – ATV1 👋</h1>
+<p>
+  <a href="https://github.com/seu-usuario/TEES-ATV1" target="_blank">
+    <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg">
   </a>
-<% } -%>
-<% if (projectVersion && !isProjectOnNpm) { -%>
-  <img alt="Version" src="https://img.shields.io/badge/version-<%= projectVersion %>-blue.svg?cacheSeconds=2592000" />
-<% } -%>
-<% if (projectPrerequisites) { -%>
-<% projectPrerequisites.map(({ name, value }) => { -%>
-  <img src="https://img.shields.io/badge/<%= name %>-<%= encodeURIComponent(value) %>-blue.svg" />
-<% }) -%>
-<% } -%>
-<% if (projectDocumentationUrl) { -%>
-  <a href="<%= projectDocumentationUrl %>" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-<% } -%>
-<% if (isGithubRepos) { -%>
-  <a href="<%= repositoryUrl %>/graphs/commit-activity" target="_blank">
+  <a href="https://github.com/seu-usuario/TEES-ATV1" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-<% } -%>
-<% if (licenseName) { -%>
-  <a href="<%= licenseUrl ? licenseUrl : '#' %>" target="_blank">
-    <img alt="License: <%= licenseName %>" src="https://img.shields.io/<%= isGithubRepos ? `github/license/${authorGithubUsername}/${projectName}` : `badge/License-${licenseName}-yellow.svg` %>" />
+  <a href="https://github.com/seu-usuario/TEES-ATV1/blob/main/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" />
   </a>
-<% } -%>
-<% if (authorTwitterUsername) { -%>
-  <a href="https://twitter.com/<%= authorTwitterUsername %>" target="_blank">
-    <img alt="Twitter: <%= authorTwitterUsername %>" src="https://img.shields.io/twitter/follow/<%= authorTwitterUsername %>.svg?style=social" />
-  </a>
-<% } -%>
 </p>
-<% if (projectDescription) { -%>
 
-> <%= projectDescription %>
-<% } -%>
-<% if (projectHomepage) { -%>
 
-### 🏠 [Homepage](<%= projectHomepage %>)
-<% } -%>
-<% if (projectDemoUrl) { -%>
+<p align="center">
+  <strong>Uma calculadora simples em Python</strong><br />
+  Desenvolvida como parte da disciplina de Tópicos Especiais em Engenharia de Software.
+</p>
 
-### ✨ [Demo](<%= projectDemoUrl %>)
-<% } -%>
-<% if (projectPrerequisites && projectPrerequisites.length) { -%>
+### 📜 Descrição do Projeto
 
+Este projeto consiste em uma calculadora simples que oferece operações básicas como soma, subtração, multiplicação e divisão. O código foi desenvolvido para fins educacionais e é uma introdução à programação em Python, além de ser uma demonstração de boas práticas de desenvolvimento de software.
+
+### 🚀 Funcionalidades
+
+- **Soma**: Adiciona dois números.
+- **Subtração**: Subtrai o segundo número do primeiro.
+- **Multiplicação**: Multiplica dois números.
+- **Divisão**: Divide o primeiro número pelo segundo, com tratamento para divisão por zero.
+
+### 🏠 [Homepage](https://github.com/seu-usuario/TEES-ATV1)
+
+### 📦 Pré-requisitos
+
+Antes de executar o projeto, você precisa ter o Python 3.0 instalado na sua máquina. Você pode baixar o Python [aqui](https://www.python.org/downloads/).
+
+### 📥 Instalação
+
+1. Clone o repositório:
+
+   ```sh
+   git clone https://github.com/Livia-ana-ss67/TEES-ATV1.git
+   cd TEES-ATV1
+   
 ## Prerequisites
 
-<% projectPrerequisites.map(({ name, value }) => { -%>
-- <%= name %> <%= value %>
-<% }) -%>
-<% } -%>
-<% if (installCommand) { -%>
+- Python 3.0
 
 ## Install
-
 ```sh
-<%= installCommand %>
+pip install -r requirements.txt
 ```
-<% } -%>
-<% if (usage) { -%>
-
 ## Usage
 
 ```sh
-<%= usage %>
-```
-<% } -%>
-<% if (testCommand) { -%>
+python calculadora.py
 
+```
 ## Run tests
-
 ```sh
-<%= testCommand %>
+pytest
+
 ```
-<% } -%>
-<% if (authorName || authorTwitterUsername || authorGithubUsername) { -%>
 
-## Author
-<% if (authorName) { %>
-👤 **<%= authorName %>**
-<% } %>
-<% if (authorWebsite) { -%>
-* Website: <%= authorWebsite %>
-<% } -%>
-<% if (authorTwitterUsername) { -%>
-* Twitter: [@<%= authorTwitterUsername %>](https://twitter.com/<%= authorTwitterUsername %>)
-<% } -%>
-<% if (authorGithubUsername) { -%>
-* Github: [@<%= authorGithubUsername %>](https://github.com/<%= authorGithubUsername %>)
-<% } -%>
-<% if (authorLinkedInUsername) { -%>
-* LinkedIn: [@<%= authorLinkedInUsername %>](https://linkedin.com/in/<%= authorLinkedInUsername %>)
-<% } -%>
-<% } -%>
-<% if (issuesUrl) { -%>
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](<%= issuesUrl %>). <%= contributingUrl ? `You can also take a look at the [contributing guide](${contributingUrl}).` : '' %>
-<% } -%>
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-<% if (authorPatreonUsername) { -%>
-
-<a href="https://www.patreon.com/<%= authorPatreonUsername %>">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-<% } -%>
-<% if (licenseName && licenseUrl) { -%>
-
-## 📝 License
-
-<% if (authorName && authorGithubUsername) { -%>
-Copyright © <%= currentYear %> [<%= authorName %>](https://github.com/<%= authorGithubUsername %>).<br />
-<% } -%>
-This project is [<%= licenseName %>](<%= licenseUrl %>) licensed.
-<% } -%>
-
-***
-<%- include('footer.md'); -%>
