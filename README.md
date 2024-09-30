@@ -69,4 +69,8 @@ python calculadora.py
 pytest
 
 ```
+✍️ Autor
+👤 Ana Lívia
+
+Github: @livia-ana-ss
 
