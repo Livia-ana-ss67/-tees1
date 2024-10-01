@@ -13,15 +13,21 @@ def divisao(a, b):
     else:
         return "Divisão por zero não é permitida"
 
+def exibir_menu():
+    print("\n" + "="*40)
+    print("        Bem-vindo à Calculadora!       ")
+    print("="*40)
+    print("Selecione a operação:")
+    print("  [1] Soma")
+    print("  [2] Subtração")
+    print("  [3] Multiplicação")
+    print("  [4] Divisão")
+    print("  [0] Sair")
+    print("="*40)
+
 def calculadora():
     while True:
-        print("\nEscolha a operação:")
-        print("1. Soma")
-        print("2. Subtração")
-        print("3. Multiplicação")
-        print("4. Divisão")
-        print("0. Sair")
-
+        exibir_menu()
         escolha = input("Digite sua escolha (0/1/2/3/4): ")
 
         if escolha == '0':
@@ -42,4 +48,4 @@ def calculadora():
         else:
             print("Escolha inválida, tente novamente.")
 
-calculadora(
+calculadora()
