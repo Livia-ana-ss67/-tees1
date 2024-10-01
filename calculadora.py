@@ -47,6 +47,12 @@ def calculadora():
             print(f"Resultado: {multiplicacao(num1, num2)}")
         elif escolha == '4':
             print(f"Resultado: {divisao(num1, num2)}")
-  
+       
+        
+       
+        
+        
+        else:
+            print("Escolha inválida, tente novamente.")
 
 calculadora()
