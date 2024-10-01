@@ -1,9 +1,6 @@
 def soma(a, b):
     return a + b
 
-def multiplicacao(a, b):
-    return a * b
-
 def subtracao(a, b):
     return a - b
 
@@ -48,6 +45,6 @@ def calculadora():
         elif escolha == '4':
             print(f"Resultado: {divisao(num1, num2)}")
         else:
-            print("Escolha inválida, tente novamente."
+            print("Escolha inválida, tente novamente.")
 
 calculadora()
