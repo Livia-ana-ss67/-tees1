@@ -30,7 +30,7 @@ def exibir_menu():
 def calculadora():
     while True:
         exibir_menu()
-        escolha = input("Digite sua escolha (0/1/2/3/4): ")
+        escolha = input("Digite sua escolha (0|1|2|3|4): ")
 
         if escolha == '0':
             print("Saindo da calculadora. Até logo!")
@@ -48,6 +48,6 @@ def calculadora():
         elif escolha == '4':
             print(f"Resultado: {divisao(num1, num2)}")
         else:
-            print("Escolha inválida, tente novamente.")
+            print("Escolha inválida, tente novamente."
 
 calculadora()
