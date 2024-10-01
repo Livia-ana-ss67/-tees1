@@ -15,14 +15,16 @@ def divisao(a, b):
 
 def exibir_menu():
     print("\n" + "="*40)
-    print("        Bem-vindo à Calculadora!       ")
+    print("         💻  Calculadora Python 💻        ")
     print("="*40)
-    print("Selecione a operação:")
-    print("  [1] Soma")
-    print("  [2] Subtração")
-    print("  [3] Multiplicação")
-    print("  [4] Divisão")
-    print("  [0] Sair")
+    print(" Escolha uma das operações abaixo: ")
+    print(" -----------------------------------")
+    print("   [1] ➔ Soma")
+    print("   [2] ➔ Subtração")
+    print("   [3] ➔ Multiplicação")
+    print("   [4] ➔ Divisão")
+    print(" -----------------------------------")
+    print("   [0] ➔ Sair")
     print("="*40)
 
 def calculadora():
