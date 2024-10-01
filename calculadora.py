@@ -50,4 +50,4 @@ def calculadora():
         else:
             print("Escolha inválida, tente novamente.")
 
-calculadora()
+calculadora(
