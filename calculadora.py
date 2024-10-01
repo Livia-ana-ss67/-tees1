@@ -13,24 +13,41 @@ def divisao(a, b):
     else:
         return "Divisão por zero não é permitida"
 
-print("Escolha a operação: ")
-print("1. Soma")
-print("2. Subtração")
-print("3. Multiplicação")
-print("4. Divisão")
+def exibir_menu():
+    print("\n" + "="*40)
+    print("         💻  Calculadora Python 💻        ")
+    print("="*40)
+    print(" Escolha uma das operações abaixo: ")
+    print(" -----------------------------------")
+    print("   [1] ➔ Soma")
+    print("   [2] ➔ Subtração")
+    print("   [3] ➔ Multiplicação")
+    print("   [4] ➔ Divisão")
+    print(" -----------------------------------")
+    print("   [0] ➔ Sair")
+    print("="*40)
 
-escolha = input("Digite sua escolha (1/2/3/4): ")
+def calculadora():
+    while True:
+        exibir_menu()
+        escolha = input("Digite sua escolha (0/1/2/3/4): ")
 
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
+        if escolha == '0':
+            print("Saindo da calculadora. Até logo!")
+            break
 
-if escolha == '1':
-    print(f"Resultado: {soma(num1, num2)}")
-elif escolha == '2':
-    print(f"Resultado: {subtracao(num1, num2)}")
-elif escolha == '3':
-    print(f"Resultado: {multiplicacao(num1, num2)}")
-elif escolha == '4':
-    print(f"Resultado: {divisao(num1, num2)}")
-else:
-    print("Escolha inválida")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+
+        if escolha == '1':
+            print(f"Resultado: {soma(num1, num2)}")
+        elif escolha == '2':
+            print(f"Resultado: {subtracao(num1, num2)}")
+        elif escolha == '3':
+            print(f"Resultado: {multiplicacao(num1, num2)}")
+        elif escolha == '4':
+            print(f"Resultado: {divisao(num1, num2)}")
+        else:
+            print("Escolha inválida, tente novamente.")
+
+calculadora()
