@@ -7,8 +7,6 @@ def subtracao(a, b):
 def multiplicacao(a, b):
     return a * b
 
-def divisao(a, b):
-    if b != 0:
         return a / b
     else:
         return "Divisão por zero não é permitida"
@@ -47,6 +45,11 @@ def calculadora():
             print(f"Resultado: {multiplicacao(num1, num2)}")
         elif escolha == '4':
             print(f"Resultado: {divisao(num1, num2)}")
+       
+        
+       
+        
+        
         else:
             print("Escolha inválida, tente novamente.")
 
